@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umbrella Studio</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript -->
+  <script src="./js/main.js" defer></script>
+
+</head>
+<body>
+  <main>
+    <!-- Header -->
+    <header id="header" class="primary-header | bg-primary-400 ">
+      <section class="main-nav | container flex ">
+        <a href="#">
+          <svg class="logo">
+            <use xlink:href="assets/svg/logo.svg#logo"></use>
+          </svg>
+          <!-- <img class="logo" src="./assets/svg/logo.svg" alt="logo"> -->
+        </a>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation | flex">
+            <li><a class="nav__link | text-neutral-200 fs-200" href="#inicio">Inicio</a></li>
+            <li><a class="nav__link | text-neutral-200 fs-200" href="#servicios">Servicios</a></li>
+            <li><a class="nav__link | text-neutral-200 fs-200" href="#nosotros">Nosotros</a></li>
+            <li><a class="nav__link | text-neutral-200 fs-200" href="#blog">Blog</a></li>
+            <li><a class="nav__link | text-neutral-200 fs-200" href="#proyectos">Proyectos</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <a class="primary-header__contact btn btn--secondary" href="#">Contáctanos</a>
+        </div>
+
+      </section>
+    </header>
+
+    <!-- Hero Section-->
+    <section id="hero" class="section-hero | bg-primary-400 padding-block-900">
+      <div class="container">
+        <div class="hero | flex-col">
+          <div class="hero__text-box | flex-col flow">
+            <h1 class="primary-heading | fs-primary-heading text-neutral-200">Diseñamos con propósito, creamos con pasión</h1>
+            <svg class="hero__text-box__icon">
+              <use xlink:href="/assets/svg/hero-arrow-star.svg#hero-arrow-star"></use>
+            </svg>
+            <p class="text-neutral-200">ADStudio Limited cuenta con un equipo extraordinario de profesionales certificados.</p>
+            <!-- <img class="svg svg--twelve-star" src="./assets/svg/twelve-star.svg" alt="">
+            <img class="svg svg--arrow" src="./assets/svg/arrow.svg" alt=""> -->
+            <div class="btn-wrapper | flex">
+              <a class="btn" href="#">Programar cita</a>
+              <a class="btn-video flex text-neutral-200" href="#">
+                <ion-icon class="btn-video__icon" name="play"></ion-icon>
+                <span>Ver video</span>
+              </a>
+            </div>
+          </div>
+          <div class="hero__img-box | flex">
+            <img class="svg svg--four-stars-orange" src="./assets/svg/4-stars-orange.svg" alt="">
+            <img class="hero__img" src="./assets/hero-image.png" alt="Some image">
+          </div>
+
+        </div>
+
+        <!-- Companies logo -->
+        <section class="section-logos__wrapper | flex-col rounded shadow flow">
+          <p class="fw-bold">Más de <span class="text-primary-100">510+</span> negocios creciendo con <span class="text-primary-100"> Umbrella</span></p>
+          <ul class="section-logos__items | flex">
+            <li><img class="section-logos__item" src="./assets/logos/logo-1.png" alt="logo 1"></li>
+            <li><img class="section-logos__item" src="./assets/logos/logo-2.png" alt="logo 2"></li>
+            <li><img class="section-logos__item" src="./assets/logos/logo-3.png" alt="logo 3"></li>
+            <li><img class="section-logos__item" src="./assets/logos/logo-4.png" alt="logo 4"></li>
+            <li><img class="section-logos__item" src="./assets/logos/logo-5.png" alt="logo 5"></li>
+            <li><img class="section-logos__item" src="./assets/logos/logo-6.svg" alt="logo 6"></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" class="section-services | bg-neutral-100 padding-block-900">
+      <div class="container">
+        <div class="services | flow">
+
+          <div class="heading-wrapper | flow">
+            <h3 class="fs-200">Nuestros Servicios</h3>
+            <h2 class="fs-secondary-heading">Conoce los servicios que podemos ofrecerte</h2>
+          </div>
+
+          <div class="swiper swiper__services | flow">
+            <ul class="services-cards swiper-wrapper">
+              <li class="services-cards__item swiper-slide | rounded padding-card flow">
+                <ion-icon class="card-icon | rounded-sm" name="rocket"></ion-icon>
+                <h4 class="fs-600">UI UX Design</h4>
+                <p>Webdesign (User interface and User Experience) is our historical expertise. We're constantly seeking to strike the right balance between efficiency.</p>
+                <a class="card__link fw-bold" href="#">Learn more</a>
+              </li>
+
+              <li class="services-cards__item card-active swiper-slide | rounded padding-card flow">
+                <ion-icon class="card-icon | rounded-sm" name="megaphone"></ion-icon>
+                <h4 class="fs-600">Marketing Digital</h4>
+                <p>We offer tailored, end-to-end digital marketing solutions to help you reach your target audience.</p>
+                <a class="card__link fw-bold" href="#">Learn more</a>
+              </li>
+
+              <li class="services-cards__item swiper-slide | rounded padding-card flow">
+                <ion-icon class="card-icon | rounded-sm" name="chatbubbles"></ion-icon>
+                <h4 class="fs-600">Análisis de Redes Sociales</h4>
+                <p>Social media analysis can help you to increase your online presence. Marketing your business at social media at targeted prospects will bring incredible success for your business.</p>
+                <a class="card__link fw-bold" href="#">Learn more</a>
+              </li>
+
+              <li class="services-cards__item swiper-slide | rounded padding-card flow">
+                <ion-icon class="card-icon | rounded-sm" name="bonfire"></ion-icon>
+                <h4 class="fs-600">Branding</h4>
+                <p>Social media analysis can help you to increase your online presence. Marketing your business at social media at targeted prospects will bring incredible success for your business.</p>
+                <a class="card__link fw-bold" href="#">Learn more</a>
+              </li>
+
+
+              <li class="services-cards__item swiper-slide | rounded padding-card flow">
+                <ion-icon class="card-icon | rounded-sm" name="balloon"></ion-icon>
+                <h4 class="fs-600">Market Research</h4>
+                <p>"Our market research services provide valuable insights into your target audience, industry trends, and competitor landscape. Our team of experienced researchers use a range of qualitative and quantitative research methods to gather data and analyze it</p>
+                <a class="card__link fw-bold" href="#">Learn more</a>
+              </li>
+            </ul>
+            <div class="btn-wrapper text-center">
+              <a><ion-icon class="button-prev button-prev--card | btn__card-item rounded-btn" name="arrow-back-circle-outline"></ion-icon></a>
+              <a><ion-icon class="button-next button-next--card | btn__card-item rounded-btn" name="arrow-forward-circle"></ion-icon></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- About Us -->
+    <section id="nosotros" class="section-about bg-accent-100 padding-block-900">
+      <div class="container">
+        <div class="about | even-columns">
+          <div class="about__img-box">
+            <img class="svg svg--green-stars" src="./assets/svg/4-stars-green.svg" alt="">
+            <picture>
+              <source srcset="./assets/about-image.webp" type="image/webp">
+              <source srcset="./assets/about-image.png" type="image/png">
+              <img class="about__img" src="./assets/about-image.png" alt="Some image">
+            </picture>
+          </div>
+          <div class="about__text-box | flow">
+            <div class="heading-wrapper | flow">
+              <h3 class="fs-200">Nosotros</h3>
+              <h2 class="fs-secondary-heading">Hacemos que tu marca destaque</h2>
+            </div>
+            <div class="about__description | flex-col flow">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum quaerat ab corporis dolor illum laboriosam modi ea illo at reiciendis dolore, incidunt mollitia pariatur velit beatae. Iusto, laudantium nobis.</p>
+              <ul>
+                <div class="about__items | flow">
+                  <li class="about__item | flex"><ion-icon class="about__item-icon" name="checkmark-circle-outline"></ion-icon>Generate qualified sales leads</li>
+                  <li class="about__item | flex"><ion-icon class="about__item-icon" name="checkmark-circle-outline"></ion-icon>We work with brands, business and teams</li>
+                  <li class="about__item | flex"><ion-icon class="about__item-icon" name="checkmark-circle-outline"></ion-icon>Transforming identities in the digital age</li>
+                  <li class="about__item | flex"><ion-icon class="about__item-icon" name="checkmark-circle-outline"></ion-icon>We collaborate with ambitious brands</li>
+                </div>
+              </ul>
+              <div>
+                <a class="btn about-btn" href="#">Conoce más</a>
+              </div>
+            </div>
+            <img class="svg svg--green-stars-inverted" src="./assets/svg/4-stars-green-inverted.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Projects -->
+    <section id="proyectos" class="bg-neutral-100 padding-block-900">
+      <div class="container">
+        <div class="projects | flow">
+          <div class="even-columns">
+            <div class="heading-wrapper | flow">
+              <h3 class="fs-200">Casos de Éxito</h3>
+              <h2 class="fs-secondary-heading">Explora nuestros proyectos</h2>
+            </div>
+            <div class="heading__btn heading__btn--top">
+              <a class="btn" href="#">Más proyectos</a>
+            </div>
+          </div>
+
+          <div class="projects__cards | even-columns flow">
+            <article class="projects__card | flow text-center">
+              <figure class="card__image | rounded">
+                <img src="./assets/project_2.jpg" alt="Some Image">
+              </figure>
+              <h5 class="card__heading | fs-400">Sitio Web Cursos Online</h5>
+              <a class="card__link fw-bold" href="#">Ver Proyecto</a>
+            </article>
+
+            <article class="projects__card | flow text-center">
+              <figure class="card__image | rounded">
+                <img src="./assets/project_one.jpg" alt="Some Image">
+              </figure>
+              <h5 class="card__heading | fs-400">Sitio Web Buscador de Trabajo</h5>
+              <a class="card__link fw-bold" href="#">Ver Proyecto</a>
+            </article>
+
+            <article class="projects__card | flow text-center">
+              <figure class="card__image | rounded">
+                <img src="./assets/project_3.jpg" alt="Some Image">
+              </figure>
+              <h5 class="card__heading | fs-400">Sitio Web Buscador de Trabajo</h5>
+              <a class="card__link fw-bold" href="#">Ver Proyecto</a>
+            </article>
+
+          </div>
+          <div class="heading__btn heading-btn--bottom">
+            <a class="btn" href="#">Más proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section-stats | bg-primary-400 padding-block-900">
+      <div class="container">
+        <div class="even-columns">
+
+          <div class="stats-card | bg-neutral-100 rounded padding-card flow flex">
+            <div>
+              <span class="card-icon | rounded-sm" name="rocket-stats">🚀</span>
+            </div>
+            <div class="stats-card__text">
+              <p class="fs-secondary-heading text-neutral-900 fw-black">+10</p>
+              <p class="fw-bold">Años de Experiencia</p>
+            </div>
+          </div>
+
+
+          <div class="stats-card | bg-neutral-100 rounded padding-card flow flex">
+            <div>
+              <span class="card-icon | rounded-sm" name="trophy">🏆</span>
+            </div>
+            <div class="stats-card__text">
+              <p class="fs-secondary-heading text-neutral-900 fw-black">+600</p>
+              <p class="fw-bold">Proyectos Exitosos</p>
+            </div>
+          </div>
+
+          <div class="stats-card | bg-neutral-100 rounded padding-card flow flex">
+            <div>
+              <span class="card-icon | rounded-sm" name="happy-face">😀</span>
+            </div>
+            <div class="stats-card__text">
+              <p class="fs-secondary-heading text-neutral-900 fw-black">+410</p>
+              <p class="fw-bold">Clientes Satisfechos</p>
+            </div>
+          </div>
+
+          <div class="stats-card | bg-neutral-100 rounded padding-card flow flex">
+            <div>
+              <span class="card-icon | rounded-sm" name="nerd-face">🤓</span>
+            </div>
+            <div class="stats-card__text">
+              <p class="fs-secondary-heading text-neutral-900 fw-black">+35</p>
+              <p class="fw-bold">Profesionales Certificados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / News-->
+    <section id="blog" class="bg-neutral-100 padding-block-900">
+      <div class="container">
+        <div class="blog | flow">
+          <div class="blog__heading | flex">
+            <div class="heading-wrapper | flow">
+              <h3 class="fs-200">Nuestro Blog</h3>
+              <h2 class="fs-secondary-heading">Nuestro último blog</h2>
+            </div>
+            <div class="heading__btn heading__btn--top">
+              <a><ion-icon class="button-prev | rounded-btn" name="arrow-back-circle-outline"></ion-icon></a>
+              <a><ion-icon class="button-next | rounded-btn" name="arrow-forward-circle"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="swiper swiper__services">
+            <div class="blog__cards swiper-wrapper | flow">
+
+              <div class="blog__cards-item swiper-slide | flow text-center">
+                <figure class="card__image | rounded">
+                  <img src="assets/blog_1.jpg" alt="Some image">
+                </figure>
+                <p class="fs-200 fw-bold">Digital Marketing</p>
+                <h5 class="fs-400">Why You Need A Social Media Marketing Service For Your Business</h5>
+                <a class="card__link fw-bold" href="#">Conoce más</a>
+              </div>
+
+              <div class="blog__cards-item swiper-slide | flow text-center">
+                <figure class="card__image | rounded">
+                  <img src="assets/blog_2.jpg" alt="Some image">
+                </figure>
+                <p class="fs-200 fw-bold">UI/UX design</p>
+                <h5 class="fs-400">Optimize User Experience Through Heatmaps &amp Session Recordings</h5>
+                <a class="card__link fw-bold" href="#">Conoce más</a>
+              </div>
+
+              <div class="blog__cards-item swiper-slide | flow text-center">
+                <figure class="card__image | rounded">
+                  <img src="assets/blog_3.jpg" alt="Some image">
+                </figure>
+                <p class="fs-200 fw-bold">UI/UX design</p>
+                <h5 class="fs-400">Importance of Website Design To Give Your Business Its Unique Voice</h5>
+                <a class="card__link fw-bold" href="#">Conoce más</a>
+              </div>
+
+              <div class="blog__cards-item swiper-slide | flow text-center">
+                <figure class="card__image | rounded">
+                  <img src="assets/blog_4.jpg" alt="Some image">
+                </figure>
+                <p class="fs-200 fw-bold">UI/UX design</p>
+                <h5 class="fs-400">Importance of Website Design To Give Your Business Its Unique Voice</h5>
+                <a class="card__link fw-bold" href="#">Conoce más</a>
+              </div>
+
+              <div class="blog__cards-item swiper-slide | flow text-center">
+                <figure class="card__image | rounded">
+                  <img src="assets/blog_5.jpg" alt="Some image">
+                </figure>
+                <p class="fs-200 fw-bold">UI/UX design</p>
+                <h5 class="fs-400">Importance of Website Design To Give Your Business Its Unique Voice</h5>
+                <a class="card__link fw-bold" href="#">Conoce más</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="heading__btn heading-btn--bottom">
+            <a><ion-icon class="button-prev | rounded-btn" name="arrow-back-circle-outline"></ion-icon></a>
+            <a><ion-icon class="button-next | rounded-btn" name="arrow-forward-circle"></ion-icon></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-testimonials | bg-accent-100 padding-block-900">
+      <div class="container">
+        <div class="testimonials | flow">
+          <div class="heading-wrapper heading-wrapper--testimonials | flex-col flow">
+            <h3 class="fs-200">Testimonios</h3>
+            <h2 class="fs-secondary-heading text-center">Conoce lo que dicen nuestros clientes</h2>
+          </div>
+
+
+          <div class="swiper swiper__testimonials">
+            <div class="testimonials__row swiper-wrapper">
+              <figure class="testimonial swiper-slide | bg-neutral-100 rounded padding-card flow">
+                <ul class="testimonial__rating | flex">
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                </ul>
+                <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellendus consequatur modi at labore nam, neque voluptate. Error ullam ea consequuntur, vero, incidunt eligendi assumenda, facere deserunt rerum accusamus animi.</blockquote>
+                <div class="testimonial__user | flex">
+                  <img class="testimonial__user__img" src="./assets/user_two.jpg" alt="User one">
+                  <div>
+                    <p class="text-neutral-900">Luis Villarreal</p>
+                    <p>Fundador &amp CEO</p>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="testimonial swiper-slide | bg-neutral-100 rounded padding-card flow">
+                <ul class="testimonial__rating | flex">
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                </ul>
+                <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellendus consequatur modi at labore nam, neque voluptate. Error ullam ea consequuntur, vero, incidunt eligendi assumenda, facere deserunt rerum accusamus animi.</blockquote>
+                <div class="testimonial__user | flex">
+                  <img class="testimonial__user__img" src="./assets/user_one.jpg" alt="User one">
+                  <div>
+                    <p class="text-neutral-900">Mariana Romero</p>
+                    <p>CEO</p>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="testimonial swiper-slide | bg-neutral-100 rounded padding-card flow">
+                <ul class="testimonial__rating | flex">
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                </ul>
+                <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellendus consequatur modi at labore nam, neque voluptate. Error ullam ea consequuntur, vero, incidunt eligendi assumenda, facere deserunt rerum accusamus animi.</blockquote>
+                <div class="testimonial__user | flex">
+                  <img class="testimonial__user__img" src="./assets/user_three.jpg" alt="User one">
+                  <div>
+                    <p class="text-neutral-900">Juan López</p>
+                    <p>Gerente Operaciones</p>
+                  </div>
+                </div>
+              </figure>
+
+              <figure class="testimonial swiper-slide | bg-neutral-100 rounded padding-card flow">
+                <ul class="testimonial__rating | flex">
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                  <li><ion-icon class="testimonial__rating-icon" name="star"></ion-icon></li>
+                </ul>
+                <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repellendus consequatur modi at labore nam, neque voluptate. Error ullam ea consequuntur, vero, incidunt eligendi assumenda, facere deserunt rerum accusamus animi.</blockquote>
+                <div class="testimonial__user | flex">
+                  <img class="testimonial__user__img" src="./assets/user_four.jpg" alt="User one">
+                  <div>
+                    <p class="text-neutral-900">Marcela Cantú</p>
+                    <p>Gerente Marketing</p>
+                  </div>
+                </div>
+              </figure>
+
+
+            </div>
+          </div>
+          <div class="text-center">
+            <a><ion-icon class="button-prev | rounded-btn" name="arrow-back-circle-outline"></ion-icon></a>
+            <a><ion-icon class="button-next | rounded-btn" name="arrow-forward-circle"></ion-icon></a>
+          </div>
+          <img class="svg svg--testimonials" src="/assets/svg/4-stars-orange-green.svg" alt="">
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-cta | bg-neutral-100">
+      <div class="container">
+        <div class="cta | even-columns bg-primary-100 padding-block-900 rounded shadow">
+          <div>
+            <p class="fs-secondary-heading text-neutral-200">Comienza y crece tu negocio con nosotros</p>
+            <!-- <p class="fs-secondary-heading text-neutral-200 text-center">Contáctanos.</p> -->
+          </div>
+          <div class="cta__btn-box flex">
+            <a class="btn btn--cta" href="#">Realizar Cita</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="primary-footer | bg-neutral-300 padding-block-medium">
+    <div class="container">
+      <div class="footer-nav | even-columns text-center">
+        <div class="flow">
+          <a href="#">
+            <svg class="logo">
+              <use xlink:href="assets/svg/logo.svg#logo"></use>
+            </svg>
+          </a>
+          <p class="fs-200">Somos una empresa comprometida con la calidad de nuestro trabajo</p>
+          <ul class="social-list flex" role="list" aria-label="Social links">
+            <li><a aria-label="facebook" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="assets/svg/social-icons.svg#logo-facebook"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="instagram" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="assets/svg/social-icons.svg#logo-instagram"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="twitter" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="assets/svg/social-icons.svg#logo-twitter"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="flow">
+          <h5 class="fs-300">Conócenos</h5>
+          <nav>
+            <ul class="flow">
+              <li class="fs-200"><a class="nav__link" href="#">Nosotros</a></li>
+              <li class="fs-200"><a class="nav__link" href="#">Servicios</a></li>
+              <li class="fs-200"><a class="nav__link" href="#">Noticias</a></li>
+              <li class="fs-200"><a class="nav__link" href="#">Contáctanos</a></li>
+              <li class="fs-200"><a class="nav__link" href="#">Precios</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flow">
+          <h5 class="fs-300">Enlaces Rápidos</h5>
+          <nav>
+            <ul class="flow">
+              <li class="fs-200"><a class="nav__link" href="#">Términos y condiciones</a></li>
+              <li class="fs-200"><a class="nav__link" href="#">Aviso de privacidad</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flow">
+          <h5 class="fs-300">Contáctanos</h5>
+          <nav>
+            <ul class="flow">
+              <li class="fs-200"><a class="nav__link" href="#">+52 813 458 306</a></li>
+              <li class="fs-200"><a class="nav__link" href="#">adstudio@gmail.com</a></li>
+            </ul>
+          </nav>
+          <form class="newsletter-form" action="#">
+            <label for="email"></label>
+            <input class="newsletter-form__input" type="email" id="email" name="email" placeholder="Suscribirse a Newsletter" required>
+            <button class="newsletter-form__button" type="submit"><ion-icon class="rounded-btn" name="arrow-forward-circle"></ion-icon></button>
+          </form>
+        </div>
+
+      </div>
+      <div class="copyright | flex">
+        <p class="copyright__text | fs-100 text-center">Copyright © 2023 &hyphen; Todos Los Derechos Reservados &vert; Desarrollado por 🦆 🤘</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+</body>
+</html>
